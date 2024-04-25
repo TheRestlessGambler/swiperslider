@@ -1,0 +1,44 @@
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Update the Swiper slide styles */
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 25rem; /* Decrease the width of the slide */
+  height: 25rem; /* Decrease the height of the slide */
+  transition: all 0.3s ease; /* Add transition for smoother effect */
+}
+
+/* Increase size and shadow effect for the selected slide */
+.swiper-slide.swiper-slide-active {
+  width: 30rem; /* Increase the width of the selected slide */
+  height: 30rem; /* Increase the height of the selected slide */
+  box-shadow: 0px 0px 2rem rgba(0, 0, 0, 0.5); /* Add more shadow effect */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
